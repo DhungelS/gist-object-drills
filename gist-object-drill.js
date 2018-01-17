@@ -1,5 +1,5 @@
 'use strict';
-
+// drill 1
 // const loaf = {
 //   flour: 300,
 //   water: 210,
@@ -12,14 +12,21 @@
 // console.log(`${loaf.flour} ${loaf.water}`);
 // console.log(loaf.hydration());
 
-const obj = {
-  foo: "Hello",
-  bar: "Ola",
-  fum: "Aloha",
-  quux: "Bonjour",
-  spam: "Hallo"
-}
+// drill 2
+// const obj = {
+//   foo: "Hello",
+//   bar: "Ola",
+//   fum: "Aloha",
+//   quux: "Bonjour",
+//   spam: "Hallo"
+// }
 
-for (let key in obj){
-  console.log(`${key}:${obj[key]}`)
-}
+// for (let key in obj){
+//   console.log(`${key}:${obj[key]}`)
+// }
+
+
+// DRILL 3
+// const theHobbit = {
+//   meals: ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']};
+// console.log(theHobbit.meals[3]);
