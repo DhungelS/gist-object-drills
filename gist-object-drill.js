@@ -131,11 +131,19 @@ function createCharacter (name, nickname, race, origin, attack, defense, describ
       console.log(`${name} is a ${race} from ${origin}.`);
     },
     evaluateFight(character) {
-      let attacker = 0;
-      let defender = 0;
-      if (defense > attack) {
-        attacker =
-      } if () {}
+      // this should refer to the character doing the attacking
+      let damageDealt = 0;
+      // damage dealt by the attack or this.character
+      let damageReceived = 0;
+      //damage received by character
+
+      if (this.defense < character.attack) {
+        damageReceived = character.attack - this.defense;
+      }
+      if (this.attack > character.defense) {
+        damageDealt = this.attack - character.defense;
+      }
+      console.log(`Your opponent takes ${damageDealt} damage and you receive ${damageReceived} damage`);
     },
   };
 }
