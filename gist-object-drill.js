@@ -32,22 +32,29 @@
 // console.log(theHobbit.meals[3]);
 
 const arr = [
-{
-  name: "Joe",
-  jobTitle: "Store Clerk"
-},
+  {
+    name: 'Joe',
+    jobTitle: 'Store Clerk',
+  },
 
-{
-  name: "Jeff",
-  jobTitle: "Policeman"
-},
+  {
+    name: 'Jeff',
+    jobTitle: 'Policeman',
+    boss: 'Joe',
+  },
 
-{
-  name: "John",
-  jobTitle: "Fisher"
-}
-]
+  {
+    name: 'John',
+    jobTitle: 'Fisher',
+    boss: 'Joe'
+  }
+];
 
 for(let i = 0; i < arr.length; i++){
-  console.log(arr[i]);
+  const employee = arr[i];
+  if (!employee.boss) {
+    console.log(`${employee.name} doesn't have a boss`);
+  } else {
+    console.log(`${employee.jobTitle} ${employee.name} to ${employee.boss}`);
+  }
 }
