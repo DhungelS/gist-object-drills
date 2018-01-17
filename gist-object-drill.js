@@ -31,30 +31,51 @@
 //   meals: ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']};
 // console.log(theHobbit.meals[3]);
 
-const arr = [
-  {
-    name: 'Joe',
-    jobTitle: 'Store Clerk',
-  },
+// const arr = [
+// {
+//   name: "Joe",
+//   jobTitle: "Store Clerk"
+// },
 
-  {
-    name: 'Jeff',
-    jobTitle: 'Policeman',
-    boss: 'Joe',
-  },
+// {
+//   name: "Jeff",
+//   jobTitle: "Policeman"
+// },
 
-  {
-    name: 'John',
-    jobTitle: 'Fisher',
-    boss: 'Joe'
-  }
-];
+// {
+//   name: "John",
+//   jobTitle: "Fisher"
+// }
+// ]
 
-for(let i = 0; i < arr.length; i++){
-  const employee = arr[i];
-  if (!employee.boss) {
-    console.log(`${employee.name} doesn't have a boss`);
-  } else {
-    console.log(`${employee.jobTitle} ${employee.name} to ${employee.boss}`);
-  }
+// for(let i = 0; i < arr.length; i++){
+//   console.log(arr[i]);
+// }
+
+
+
+function decode (word){
+
+const cipher = {
+  a: 2,
+  b: 3,
+  c: 4,
+  d: 5
 }
+
+const splitWords = word.split(" ")
+const splitArray = splitWords.map ( word => {
+  let offset;
+  if(cipher[word[0]]){
+    offset = cipher[word[0]] - 1
+  }
+  return offset ? word[offset] : " ";
+ })
+// else {
+//   console.log(" ")
+// }
+
+return splitArray.join("");
+}
+
+console.log(decode("craft block argon meter bells brown croon droop"));
