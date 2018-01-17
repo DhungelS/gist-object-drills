@@ -30,3 +30,24 @@
 // const theHobbit = {
 //   meals: ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']};
 // console.log(theHobbit.meals[3]);
+
+const arr = [
+{
+  name: "Joe",
+  jobTitle: "Store Clerk"
+},
+
+{
+  name: "Jeff",
+  jobTitle: "Policeman"
+},
+
+{
+  name: "John",
+  jobTitle: "Fisher"
+}
+]
+
+for(let i = 0; i < arr.length; i++){
+  console.log(arr[i]);
+}
